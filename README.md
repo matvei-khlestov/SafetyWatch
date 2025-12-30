@@ -4,9 +4,10 @@ SafetyWatch is a demo iOS + watchOS project that implements a complete emergency
 
 <p align="center">
   <img
-    src="https://github.com/user-attachments/assets/aefef67e-4003-4b3e-94d4-a87d71301bb6"
-    alt="SafetyWatch mockups"
-    width="100%"
+    width="1599"
+    height="2490"
+    alt="WatchMockup-2"
+    src="https://github.com/user-attachments/assets/87059d29-f72c-4a00-831f-0b94f1deec05"
   />
 </p>
 
