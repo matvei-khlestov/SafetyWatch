@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A055F79B2F04BDB5000982F7 /* SOSAppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A055F79A2F04BDB5000982F7 /* SOSAppRouter.swift */; };
+		A055F79D2F04BED7000982F7 /* SOSRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A055F79C2F04BED7000982F7 /* SOSRoute.swift */; };
 		A06E226B2F01862600333318 /* SafetyWatch Watch App Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A06E22612F01862400333318 /* SafetyWatch Watch App Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A06E22942F01B92400333318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A06E228C2F01B92400333318 /* Assets.xcassets */; };
 		A06E22962F01B92400333318 /* SafetyWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06E228E2F01B92400333318 /* SafetyWatchApp.swift */; };
@@ -72,6 +74,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A055F79A2F04BDB5000982F7 /* SOSAppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSAppRouter.swift; sourceTree = "<group>"; };
+		A055F79C2F04BED7000982F7 /* SOSRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSRoute.swift; sourceTree = "<group>"; };
 		A06E224F2F0185DC00333318 /* SafetyWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafetyWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06E22612F01862400333318 /* SafetyWatch Watch App Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SafetyWatch Watch App Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06E228C2F01B92400333318 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -131,6 +135,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A055F7992F04BD9A000982F7 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				A055F79A2F04BDB5000982F7 /* SOSAppRouter.swift */,
+				A055F79C2F04BED7000982F7 /* SOSRoute.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
 		A06E22462F0185DC00333318 = {
 			isa = PBXGroup;
 			children = (
@@ -360,6 +373,7 @@
 		A06E230A2F01EF1A00333318 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				A055F7992F04BD9A000982F7 /* Routing */,
 				A06E23062F01EF1A00333318 /* Screens */,
 				A06E23092F01EF1A00333318 /* UI */,
 				A06E23022F01EF1A00333318 /* Map */,
@@ -533,6 +547,8 @@
 				A06E23112F01EF1A00333318 /* ShareSheet.swift in Sources */,
 				A06E23122F01EF1A00333318 /* SOSReceiverHeaderView.swift in Sources */,
 				A06E22BB2F01C03700333318 /* SOSPhoneConnectivityProtocol.swift in Sources */,
+				A055F79D2F04BED7000982F7 /* SOSRoute.swift in Sources */,
+				A055F79B2F04BDB5000982F7 /* SOSAppRouter.swift in Sources */,
 				A06E22DC2F01DDA400333318 /* SOSMapGradients.swift in Sources */,
 				A06E22962F01B92400333318 /* SafetyWatchApp.swift in Sources */,
 				A06E22982F01B92400333318 /* SOSLocationService.swift in Sources */,

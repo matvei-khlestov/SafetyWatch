@@ -9,7 +9,6 @@ import Foundation
 import CoreLocation
 
 struct SOSMapRoute: Hashable, Identifiable {
-    
     let recordId: UUID
     let latitude: Double
     let longitude: Double
@@ -24,5 +23,10 @@ struct SOSMapRoute: Hashable, Identifiable {
     
     var coordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+    }
+    
+    var shareText: String {
+        let link = "https://maps.apple.com/?ll=\(latitude),\(longitude)"
+        return "SOS! Я здесь: \(link)"
     }
 }

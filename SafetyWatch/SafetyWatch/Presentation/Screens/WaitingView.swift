@@ -10,16 +10,15 @@ import SwiftUI
 struct WaitingView: View {
     
     let lastRecord: SOSRecord?
-    @Binding var history: [SOSRecord]
+    let history: [SOSRecord]
     let onOpenLastSOS: () -> Void
-    let onOpenHistoryItem: (SOSRecord) -> Void
-    let onClearHistory: () -> Void
+    let onOpenHistory: () -> Void
     
     var body: some View {
         ZStack {
             VStack(spacing: 12) {
                 Image(systemName: "applewatch")
-                    .font(.system(size: 100, weight: .semibold))
+                    .font(.system(size: 120, weight: .semibold))
                     .foregroundStyle(.secondary)
                 
                 Text("Waiting for SOS")
@@ -37,13 +36,7 @@ struct WaitingView: View {
                 }
                 
                 if !history.isEmpty {
-                    NavigationLink {
-                        SOSHistoryView(
-                            items: $history,
-                            onSelect: onOpenHistoryItem,
-                            onClear: onClearHistory
-                        )
-                    } label: {
+                    Button(action: onOpenHistory) {
                         Text("History")
                             .font(.system(size: 15, weight: .semibold))
                             .frame(width: 160)

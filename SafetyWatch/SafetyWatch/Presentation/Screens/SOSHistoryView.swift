@@ -49,10 +49,8 @@ struct SOSHistoryView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                Button("Clear") {
-                    isClearAlertPresented = true
-                }
-                .disabled(items.isEmpty)
+                Button("Clear") { isClearAlertPresented = true }
+                    .disabled(items.isEmpty)
             }
         }
         .alert("Clear SOS History?", isPresented: $isClearAlertPresented) {
