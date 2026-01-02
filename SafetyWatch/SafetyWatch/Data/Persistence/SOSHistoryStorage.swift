@@ -9,14 +9,14 @@ import Foundation
 import CoreLocation
 
 struct SOSHistoryStorage {
-
+    
     private static let key = "safetywatch_sos_history"
-
+    
     static func load() -> [SOSRecord] {
         guard let data = UserDefaults.standard.data(forKey: key) else { return [] }
         return (try? JSONDecoder().decode([SOSRecord].self, from: data)) ?? []
     }
-
+    
     static func append(coordinate: CLLocationCoordinate2D) -> SOSRecord {
         var items = load()
         let record = SOSRecord(
@@ -29,11 +29,17 @@ struct SOSHistoryStorage {
         save(items)
         return record
     }
-
+    
+    static func delete(id: UUID) {
+        var items = load()
+        items.removeAll { $0.id == id }
+        save(items)
+    }
+    
     static func clearAll() {
         UserDefaults.standard.removeObject(forKey: key)
     }
-
+    
     private static func save(_ items: [SOSRecord]) {
         guard let data = try? JSONEncoder().encode(items) else { return }
         UserDefaults.standard.set(data, forKey: key)

@@ -37,7 +37,7 @@
 		A06E230B2F01EF1A00333318 /* SOSMapBottomPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06E22FF2F01EF1A00333318 /* SOSMapBottomPanel.swift */; };
 		A06E230C2F01EF1A00333318 /* SOSMapRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06E23002F01EF1A00333318 /* SOSMapRoute.swift */; };
 		A06E230D2F01EF1A00333318 /* SOSPulsingPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06E23012F01EF1A00333318 /* SOSPulsingPin.swift */; };
-		A06E230E2F01EF1A00333318 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06E23032F01EF1A00333318 /* ContentView.swift */; };
+		A06E230E2F01EF1A00333318 /* SOSRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06E23032F01EF1A00333318 /* SOSRootView.swift */; };
 		A06E230F2F01EF1A00333318 /* SOSMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06E23042F01EF1A00333318 /* SOSMapView.swift */; };
 		A06E23102F01EF1A00333318 /* WaitingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06E23052F01EF1A00333318 /* WaitingView.swift */; };
 		A06E23112F01EF1A00333318 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06E23072F01EF1A00333318 /* ShareSheet.swift */; };
@@ -47,6 +47,12 @@
 		A06E23222F01F84C00333318 /* SOSHistoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06E23212F01F84C00333318 /* SOSHistoryStorage.swift */; };
 		A06E23242F01F8B100333318 /* SOSHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06E23232F01F8B100333318 /* SOSHistoryView.swift */; };
 		A06E23262F01FF3400333318 /* LastSOSCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06E23252F01FF3400333318 /* LastSOSCardView.swift */; };
+		A091BDC62F0864FD00DA4E8B /* SwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A091BDC52F0864FD00DA4E8B /* SwipeAction.swift */; };
+		A091BDC82F08651200DA4E8B /* SwipeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A091BDC72F08651200DA4E8B /* SwipeCoordinator.swift */; };
+		A091BDCA2F08652A00DA4E8B /* SwipeActionModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A091BDC92F08652A00DA4E8B /* SwipeActionModels.swift */; };
+		A091BDCC2F08654600DA4E8B /* SwipeActionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A091BDCB2F08654600DA4E8B /* SwipeActionHelpers.swift */; };
+		A091BDCE2F08655C00DA4E8B /* SwipeMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A091BDCD2F08655C00DA4E8B /* SwipeMetrics.swift */; };
+		A091BDD02F08797800DA4E8B /* SOSHistoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A091BDCF2F08797800DA4E8B /* SOSHistoryCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,7 +111,7 @@
 		A06E22FF2F01EF1A00333318 /* SOSMapBottomPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSMapBottomPanel.swift; sourceTree = "<group>"; };
 		A06E23002F01EF1A00333318 /* SOSMapRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSMapRoute.swift; sourceTree = "<group>"; };
 		A06E23012F01EF1A00333318 /* SOSPulsingPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSPulsingPin.swift; sourceTree = "<group>"; };
-		A06E23032F01EF1A00333318 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A06E23032F01EF1A00333318 /* SOSRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSRootView.swift; sourceTree = "<group>"; };
 		A06E23042F01EF1A00333318 /* SOSMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSMapView.swift; sourceTree = "<group>"; };
 		A06E23052F01EF1A00333318 /* WaitingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingView.swift; sourceTree = "<group>"; };
 		A06E23072F01EF1A00333318 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
@@ -115,6 +121,12 @@
 		A06E23212F01F84C00333318 /* SOSHistoryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSHistoryStorage.swift; sourceTree = "<group>"; };
 		A06E23232F01F8B100333318 /* SOSHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSHistoryView.swift; sourceTree = "<group>"; };
 		A06E23252F01FF3400333318 /* LastSOSCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastSOSCardView.swift; sourceTree = "<group>"; };
+		A091BDC52F0864FD00DA4E8B /* SwipeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeAction.swift; sourceTree = "<group>"; };
+		A091BDC72F08651200DA4E8B /* SwipeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCoordinator.swift; sourceTree = "<group>"; };
+		A091BDC92F08652A00DA4E8B /* SwipeActionModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionModels.swift; sourceTree = "<group>"; };
+		A091BDCB2F08654600DA4E8B /* SwipeActionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionHelpers.swift; sourceTree = "<group>"; };
+		A091BDCD2F08655C00DA4E8B /* SwipeMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeMetrics.swift; sourceTree = "<group>"; };
+		A091BDCF2F08797800DA4E8B /* SOSHistoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSHistoryCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +152,7 @@
 			children = (
 				A055F79A2F04BDB5000982F7 /* SOSAppRouter.swift */,
 				A055F79C2F04BED7000982F7 /* SOSRoute.swift */,
+				A06E23002F01EF1A00333318 /* SOSMapRoute.swift */,
 			);
 			path = Routing;
 			sourceTree = "<group>";
@@ -293,12 +306,12 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		A06E22CD2F01C5DF00333318 /* UI */ = {
+		A06E22CD2F01C5DF00333318 /* SharedUI */ = {
 			isa = PBXGroup;
 			children = (
 				A06E22CE2F01C61600333318 /* Components */,
 			);
-			path = UI;
+			path = SharedUI;
 			sourceTree = "<group>";
 		};
 		A06E22CE2F01C61600333318 /* Components */ = {
@@ -322,12 +335,12 @@
 			path = Style;
 			sourceTree = "<group>";
 		};
-		A06E22D32F01DA7700333318 /* Screens */ = {
+		A06E22D32F01DA7700333318 /* Root */ = {
 			isa = PBXGroup;
 			children = (
 				A06E229C2F01B92800333318 /* ContentView.swift */,
 			);
-			path = Screens;
+			path = Root;
 			sourceTree = "<group>";
 		};
 		A06E22D82F01DD4A00333318 /* Style */ = {
@@ -339,44 +352,32 @@
 			path = Style;
 			sourceTree = "<group>";
 		};
-		A06E23022F01EF1A00333318 /* Map */ = {
-			isa = PBXGroup;
-			children = (
-				A06E22FF2F01EF1A00333318 /* SOSMapBottomPanel.swift */,
-				A06E23002F01EF1A00333318 /* SOSMapRoute.swift */,
-				A06E23012F01EF1A00333318 /* SOSPulsingPin.swift */,
-			);
-			path = Map;
-			sourceTree = "<group>";
-		};
 		A06E23062F01EF1A00333318 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				A06E23032F01EF1A00333318 /* ContentView.swift */,
-				A06E23042F01EF1A00333318 /* SOSMapView.swift */,
-				A06E23052F01EF1A00333318 /* WaitingView.swift */,
-				A06E23232F01F8B100333318 /* SOSHistoryView.swift */,
-				A06E23252F01FF3400333318 /* LastSOSCardView.swift */,
+				A091BDD32F08832C00DA4E8B /* Waiting */,
+				A091BDD42F08835000DA4E8B /* History */,
+				A091BDD52F08837400DA4E8B /* Map */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		A06E23092F01EF1A00333318 /* UI */ = {
+		A06E23092F01EF1A00333318 /* SharedUI */ = {
 			isa = PBXGroup;
 			children = (
-				A06E23072F01EF1A00333318 /* ShareSheet.swift */,
-				A06E23082F01EF1A00333318 /* SOSReceiverHeaderView.swift */,
+				A091BDC42F0864CB00DA4E8B /* SwipeActions */,
+				A091BDDC2F0884C000DA4E8B /* ShareSheet */,
 			);
-			path = UI;
+			path = SharedUI;
 			sourceTree = "<group>";
 		};
 		A06E230A2F01EF1A00333318 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				A091BDD22F0882D000DA4E8B /* Root */,
 				A055F7992F04BD9A000982F7 /* Routing */,
 				A06E23062F01EF1A00333318 /* Screens */,
-				A06E23092F01EF1A00333318 /* UI */,
-				A06E23022F01EF1A00333318 /* Map */,
+				A06E23092F01EF1A00333318 /* SharedUI */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -384,8 +385,8 @@
 		A06E23132F01EF3200333318 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				A06E22D32F01DA7700333318 /* Screens */,
-				A06E22CD2F01C5DF00333318 /* UI */,
+				A06E22D32F01DA7700333318 /* Root */,
+				A06E22CD2F01C5DF00333318 /* SharedUI */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -428,6 +429,111 @@
 				A06E231D2F01F31300333318 /* Date+RelativeDescription.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		A091BDC42F0864CB00DA4E8B /* SwipeActions */ = {
+			isa = PBXGroup;
+			children = (
+				A091BDC52F0864FD00DA4E8B /* SwipeAction.swift */,
+				A091BDC72F08651200DA4E8B /* SwipeCoordinator.swift */,
+				A091BDC92F08652A00DA4E8B /* SwipeActionModels.swift */,
+				A091BDCB2F08654600DA4E8B /* SwipeActionHelpers.swift */,
+				A091BDCD2F08655C00DA4E8B /* SwipeMetrics.swift */,
+			);
+			path = SwipeActions;
+			sourceTree = "<group>";
+		};
+		A091BDD22F0882D000DA4E8B /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				A06E23032F01EF1A00333318 /* SOSRootView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		A091BDD32F08832C00DA4E8B /* Waiting */ = {
+			isa = PBXGroup;
+			children = (
+				A091BDD82F08840D00DA4E8B /* View */,
+				A091BDD62F08838700DA4E8B /* Components */,
+			);
+			path = Waiting;
+			sourceTree = "<group>";
+		};
+		A091BDD42F08835000DA4E8B /* History */ = {
+			isa = PBXGroup;
+			children = (
+				A091BDD92F08842B00DA4E8B /* View */,
+				A091BDD72F0883D300DA4E8B /* Components */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		A091BDD52F08837400DA4E8B /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				A091BDDA2F08846900DA4E8B /* View */,
+				A091BDDB2F08847200DA4E8B /* Components */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		A091BDD62F08838700DA4E8B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A06E23252F01FF3400333318 /* LastSOSCardView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A091BDD72F0883D300DA4E8B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A091BDCF2F08797800DA4E8B /* SOSHistoryCardView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A091BDD82F08840D00DA4E8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A06E23052F01EF1A00333318 /* WaitingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A091BDD92F08842B00DA4E8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A06E23232F01F8B100333318 /* SOSHistoryView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A091BDDA2F08846900DA4E8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A06E23042F01EF1A00333318 /* SOSMapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A091BDDB2F08847200DA4E8B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A06E22FF2F01EF1A00333318 /* SOSMapBottomPanel.swift */,
+				A06E23012F01EF1A00333318 /* SOSPulsingPin.swift */,
+				A06E23082F01EF1A00333318 /* SOSReceiverHeaderView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A091BDDC2F0884C000DA4E8B /* ShareSheet */ = {
+			isa = PBXGroup;
+			children = (
+				A06E23072F01EF1A00333318 /* ShareSheet.swift */,
+			);
+			path = ShareSheet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -535,12 +641,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A091BDCE2F08655C00DA4E8B /* SwipeMetrics.swift in Sources */,
 				A06E22BD2F01C06000333318 /* SOSLocationServiceProtocol.swift in Sources */,
 				A06E230B2F01EF1A00333318 /* SOSMapBottomPanel.swift in Sources */,
+				A091BDC62F0864FD00DA4E8B /* SwipeAction.swift in Sources */,
 				A06E23222F01F84C00333318 /* SOSHistoryStorage.swift in Sources */,
 				A06E230C2F01EF1A00333318 /* SOSMapRoute.swift in Sources */,
 				A06E230D2F01EF1A00333318 /* SOSPulsingPin.swift in Sources */,
-				A06E230E2F01EF1A00333318 /* ContentView.swift in Sources */,
+				A06E230E2F01EF1A00333318 /* SOSRootView.swift in Sources */,
 				A06E231E2F01F31300333318 /* Date+RelativeDescription.swift in Sources */,
 				A06E230F2F01EF1A00333318 /* SOSMapView.swift in Sources */,
 				A06E23102F01EF1A00333318 /* WaitingView.swift in Sources */,
@@ -551,10 +659,14 @@
 				A055F79B2F04BDB5000982F7 /* SOSAppRouter.swift in Sources */,
 				A06E22DC2F01DDA400333318 /* SOSMapGradients.swift in Sources */,
 				A06E22962F01B92400333318 /* SafetyWatchApp.swift in Sources */,
+				A091BDCC2F08654600DA4E8B /* SwipeActionHelpers.swift in Sources */,
 				A06E22982F01B92400333318 /* SOSLocationService.swift in Sources */,
+				A091BDCA2F08652A00DA4E8B /* SwipeActionModels.swift in Sources */,
 				A06E22992F01B92400333318 /* SOSOrchestrator.swift in Sources */,
 				A06E229A2F01B92400333318 /* SOSPhoneConnectivity.swift in Sources */,
 				A06E23262F01FF3400333318 /* LastSOSCardView.swift in Sources */,
+				A091BDD02F08797800DA4E8B /* SOSHistoryCardView.swift in Sources */,
+				A091BDC82F08651200DA4E8B /* SwipeCoordinator.swift in Sources */,
 				A06E22DA2F01DD8000333318 /* SOSMapColors.swift in Sources */,
 				A06E23202F01F82600333318 /* SOSRecord.swift in Sources */,
 				A06E23242F01F8B100333318 /* SOSHistoryView.swift in Sources */,

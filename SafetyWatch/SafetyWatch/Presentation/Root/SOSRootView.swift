@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  SOSRootView.swift
 //  SafetyWatch
 //
 //  Created by Matvei Khlestov on 28.12.2025.
@@ -7,13 +7,11 @@
 
 import SwiftUI
 
-struct ContentView: View {
-
+struct SOSRootView: View {
+    
     @StateObject private var orchestrator = SOSOrchestrator()
-    @StateObject private var router = SOSAppRouter()
-
-    @State private var didFinishInitialLoad: Bool = false
-
+    @State private var router = SOSAppRouter()
+    
     var body: some View {
         NavigationStack(path: $router.path) {
             WaitingView(
@@ -29,7 +27,7 @@ struct ContentView: View {
                         coordinate: mapRoute.coordinate,
                         shareText: mapRoute.shareText
                     )
-
+                    
                 case .history:
                     SOSHistoryView(
                         items: $orchestrator.history,
@@ -40,15 +38,15 @@ struct ContentView: View {
             }
             .onReceive(
                 orchestrator.$lastRecord
-                    .compactMap { $0 }
-                    .removeDuplicates(by: { a, b in a.id == b.id })
+                    .removeDuplicates(by: { $0?.id == $1?.id })
             ) { record in
-                guard didFinishInitialLoad else { return }
-                router.open(record)
+                router.autoOpenLastIfNeeded(record)
             }
             .onAppear {
                 orchestrator.start()
-                DispatchQueue.main.async { didFinishInitialLoad = true }
+                DispatchQueue.main.async {
+                    router.markReadyForAutoOpen()
+                }
             }
             .onDisappear {
                 orchestrator.stop()

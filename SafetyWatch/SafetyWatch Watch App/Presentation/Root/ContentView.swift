@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  SOSRootView.swift
 //  SafetyWatch Watch App Watch App
 //
 //  Created by Matvei Khlestov on 28.12.2025.
